@@ -1,11 +1,159 @@
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
-    color: #333; /* Text color */
-    padding: 20px; /* Padding around the body */
-    align-items: center; /* Center align items */
-    justify-content:space-evenly;
-    display: flex; /* Flexbox for layout */
-    flex-wrap: wrap; /* Prevent text from wrapping */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Importing a Google font for better typography */
+body {
+  font-family: 'Roboto', sans-serif; /* font-family is used to set the font of the body */
+  margin: 0;/* margin is used to remove default margin */
+  color: #333;/* color is used to set the text color */
+  background-image: url('bg.png');/* background is used to set the background color */
+  text-align: center;
+}
+
+nav {
+  top:10px; /* top is used to set the position */
+  background: #610609d0;
+  position:fixed; /* position is used to fix the navigation bar at the top */
+  width: 100%; /* width is used to set the width of the navigation bar */
+  z-index: 1000; /* z-index is used to set the stacking order of the navigation bar */
+}
+
+nav ul {
+  list-style: none; /* list-style is used to remove the default bullet points from the list */
+  display: flex;
+  justify-content: space-evenly;/* justify-content is used to align the list items evenly */
+  gap: 10px; /* gap is used to set the space between the list items */
+}
+
+nav a {
+  text-decoration: none; /* text-decoration is used to remove the underline from the links */
+  padding: 10px 20px; /* padding is used to add space inside the link */
+  color: white;
+  font-weight: bold;
+}
+nav a:hover {
+  text-transform: uppercase; /* text-transform is used to change the text to uppercase on hover */
+  color: #ffe0ac; /* color is used to change the text color on hover */
+}
+
+.container {
+  width: 90%;
+  margin-top: 30px;
+  background: rgba(207, 207, 207, 0.8); /* rgba is used to set a semi-transparent background */
+  backdrop-filter: blur(0px); /* blur */
+  padding: 20px; /* padding is used to add space inside the container */
+  margin: auto; /* margin is used to center the container */
+  border-radius: 20px;
+}
+
+header {
+  background: hsla(24, 100%, 15%, 0.873);
+  padding: 20px;
+  width:fit-content;
+  margin: auto;
+  margin-top: 40px;
+  color: #fffaf5;
+  border-radius: 50px;
+  box-shadow: 5px 2px 3px rgb(94, 92, 92);
+  font-style: italic;
+  text-shadow: #333 2px 2px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.img-container {
+  display: flex;
+  margin-bottom: 20px;
+  border: 2px solid #fce9d6; /* border is used to set the border of the image container */
+  width: 90px;
+  height: 90px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h2{
+  text-decoration-color: #fce9d6; /* text-decoration is used to underline the text, text-decoration-color is used to set the color of the underline */
+  text-decoration:double underline; /* text-decoration is used to set the style of the underline */
+  font-size: 1.9rem; /* font-size is used to set the size of the text */
+  /*px is a fixed unit of measurement, while rem and em are relative units of measurement */
+  /* rem is a relative unit of measurement that is based on the font size of the root element */
+  /*em is a relative unit of measurement that is based on the font size of the parent element */
+  /*root vs parent element: The root element is the top-level element in the document, while the parent element is the element that contains the current element. */
+  text-underline-offset: 4px; /* text-underline-offset is used to set the space between the text and the underline */
+  font-family: cursive; /* font-family is used to set the font of the text */
+  color: #1b1a19; /* color is used to set the text color */
+  /* text-shadow: #333 2px 2px 4px; /* text-shadow */
+}
+.menu {
+  margin: 30px 0;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.item {
+  background:linear-gradient(120deg, #523302 30%, #7a630798);
+  padding: 15px 20px;/* first value is for top and bottom padding, second value is for left and right padding */
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px #ddd;
+  font-size: 1.1rem;
+  border: #fce9d6 2px solid ;
+  box-shadow: 2px 2px 6px #393030;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  height: 50px;
+  font-size: 1.2rem;
+  background:linear-gradient(120deg, #1c0802, #d5390a);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background:linear-gradient(300deg, #1c0802, #d5390a);
+  transform: scale(1.05); /* transform is used to scale the button on hover */
+}
+
+footer {
+  background: #020001;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: cornsilk;
+}
+
+.surprise {
+  margin: 20px;
+  padding: 10px;
+  background: #341911;
+  font-size: 15px;
+  border-radius: 18px;
+  color: #ffe5dd;
+  font-weight: bold;
+  width: fit-content;
+  height: 50px;
+  display: flex;
+  margin: auto;
+}
+p{
+  font-size: 0.9rem; /* font-size is used to set the size of the text */
+  color: #dedede; /* color is used to set the text color */
+  margin: 10px 0; /* margin is used to add space around the paragraph */
+  line-height: 1.5; /* line-height is used to set the space between lines */
+}
+#mail {
+  font-weight: bold; /* font-weight is used to set the weight of the text */
+  color: #211305; /* color is used to set the text color */
+  font-size: 1.2rem; /* font-size is used to set the size of the text */
+  margin-top: 10px; /* margin-top is used to add space above the element */
 }
