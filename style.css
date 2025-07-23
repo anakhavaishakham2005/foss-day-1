@@ -1,11 +1,74 @@
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
-    color: #333; /* Text color */
-    padding: 20px; /* Padding around the body */
-    align-items: center; /* Center align items */
-    justify-content:space-evenly;
-    display: flex; /* Flexbox for layout */
-    flex-wrap: wrap; /* Prevent text from wrapping */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #fffaf5;
+  color: #333;
+  text-align: center;
+}
+
+nav {
+  background: #ffb6b9;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header {
+  background: #ffe0ac;
+  padding: 30px;
+  border-radius: 0 0 15px 15px;
+}
+
+.menu {
+  margin: 30px 0;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: #ffdecb;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px #ddd;
+  font-size: 1.1rem;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  background: #ff8a65;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ff7043;
+}
+
+footer {
+  background: #f8c8dc;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
 }
