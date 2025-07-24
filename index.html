@@ -44,8 +44,9 @@
         <h4 id="surprise">Don't you want to try something sweet?</h4>
       </div>
     <section id="contact">
-      <h2>Contact Us</h2>
-      
+      <h2 style="padding: 6px; margin: 8px;">Contact Us</h2>
+      <!-- this type of styling where styles are applied directly to the element is called inline CSS -->
+
       <p id="mail">@email.com</p>
     </section>
     <br>
@@ -54,6 +55,22 @@
       <p>&copy; Made by: Anakha . S, FOSS CLUB Tech Lead</p><!-- &copy; is the HTML entity for the copyright symbol -->
       <p>All rights reserved.</p>
     </footer>
+    <style> 
+    /*this type of adding styles is called internal CSS, it is used to apply styles within a <style> tag in the document */
+      .surprise {
+  margin: 20px;
+  padding: 10px;
+  background: #341911; 
+  font-size: 15px;
+  border-radius: 18px;
+  color: #ffe5dd;
+  font-weight: bold;
+  width: fit-content;
+  height: 50px;
+  display: flex;
+  margin: auto; /* Centers it horizontally */
+}
+    </style>
     <script src="script.js"></script><!-- script is used to link to JavaScript files or include inline scripts -->
   </body>
 </html>
