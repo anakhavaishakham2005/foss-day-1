@@ -176,7 +176,9 @@ p {
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   padding: 20px;
   border-radius: 15px;
-  margin: 20px
+  margin: 20px auto;
+  max-width: 600px; /* Limits width for better readability */
+  width: 60%;
 }
 #btn{
   background-color: rgba(255, 255, 255, 0.553);
@@ -184,6 +186,9 @@ p {
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   padding: 20px;
   border-radius: 15px;
+  margin : 20px auto;
+  max-width: 600px; /* Limits width for better readability */
+  width: 60%;
 }
 a{
   text-decoration: none;
