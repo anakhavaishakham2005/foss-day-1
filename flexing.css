@@ -1,0 +1,65 @@
+/* ===== FLEX CONTAINER STYLES ===== */
+
+.parent {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    /* ---------- FLEX DIRECTION ---------- */
+    flex-direction: row;              /* Horizontal left to right (default) */
+    /* flex-direction: row-reverse;      Horizontal right to left */
+    /* flex-direction: column;           Vertical top to bottom */
+    /* flex-direction: column-reverse;   Vertical bottom to top */
+
+    /* ---------- WRAPPING ---------- */
+    /* flex-wrap: nowrap;               No wrap, all items in one line (default) */
+    flex-wrap: wrap;                    /* Items wrap onto next line */
+    /* flex-wrap: wrap-reverse;         Wrap in reverse order */
+
+    /* ---------- MAIN AXIS ALIGNMENT ---------- */
+    /* justify-content: flex-start;     Align items to the left (default) */
+    /* justify-content: flex-end;       Align items to the right */
+    /* justify-content: center;         Center items horizontally */
+    /* justify-content: space-between;  Space between items only */
+    /* justify-content: space-around;   Space around items */
+    justify-content: space-evenly;      /* Equal space around items */
+
+    /* ---------- CROSS AXIS ALIGNMENT ---------- */
+    /* align-items: stretch;            Stretch to fill (default if no height) */
+    /* align-items: flex-start;         Align items to top */
+    /* align-items: flex-end;           Align items to bottom */
+    align-items: center;                /* Align items to vertical center */
+
+    /* ---------- MULTI-LINE CONTENT ALIGNMENT ---------- */
+    /* align-content: flex-start;       Top-aligned rows (when wrapping) */
+    /* align-content: flex-end;         Bottom-aligned rows */
+    /* align-content: center;           Center rows */
+    /* align-content: space-between;    Space between rows */
+    /* align-content: space-around;     Space around rows */
+    /* align-content: space-evenly;     Equal space among rows */
+    align-content: flex-start;          /*(default) Stretch rows to fill */
+}
+
+
+/* ===== FLEX ITEM STYLES ===== */
+
+.container {
+    background-color: #ad7979;
+    color: white;
+    margin: 20px;
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* ---------- FLEX PROPERTY SHORTHAND ---------- */
+    /* flex: 0 1 auto;     No grow, can shrink, size by content (default) */
+    /* flex: 1 1 auto;     Grow & shrink equally, base on content */
+    /* flex: 0 0 auto;     No grow/shrink, size by content only */
+    /* flex: 1;            Shortcut for flex-grow: 1 */
+}
+
