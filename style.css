@@ -85,13 +85,14 @@ h2 {
 }
 
 .menu {
+  margin: 50px auto; /* Centers the menu */
   border-radius: 20px;
   padding: 20px;
-  width: fit-content;
-  margin: auto; /* Vertical space above and below */
+  width: fit-content; /* Vertical space above and below */
 }
 
 .items {
+  margin: 20px auto;
   display: flex;
   justify-content: center;
   gap: 30px;
