@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Importing a Google font for better typography */
 
 body {
-  font-family: 'Roboto', sans-serif; /* Sets the default font */
+  font-family:Arial, Helvetica, sans-serif; /* Sets the default font */
   margin: 0; /* Removes default browser margin */
   color: #333; /* Sets base text color */
   background-image: url('bg.png'); /* Sets a background image */
@@ -10,23 +9,23 @@ body {
 }
 
 nav {
-  top:10px; /* Positions nav 10px from the top */
   background: #1e0304fc; /* Dark semi-transparent background */
   position:fixed; /* Keeps nav bar fixed while scrolling */
   width: 100%; /* Stretches nav across the screen */
   z-index: 1000; /* Brings nav to the front of stack, the larger the value, the higher the stack */
+  height: 70px;
+  align-content: center;
 }
 
 nav ul {
   list-style: none; /* Removes default bullet points */
   display: flex; /* Displays items in a row */
   justify-content: right; /* Even spacing across container */
-  gap: 10px; /* Adds space between items */
 }
 
 nav a {
   text-decoration: none; /* Removes underline from links */
-  padding: 10px 20px; /* Adds inner space to links */
+  padding: 20px; /* Adds inner space to links */
   color: white; 
   font-weight: bold; /* Makes the text bolder */
 }
@@ -37,32 +36,59 @@ nav a:hover {
 }
 
 .container {
-  width: 90%; /* Sets container width to 90% of screen */
-  margin-top: 30px; 
-  
+  width: 100%; /* Sets container width to 90% of screen */
+  margin: 20px; 
   padding: 20px;
   margin: auto; 
   border-radius: 20px; /* Smooth curved corners */
 }
 
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px; /* spacing between header and image */
+  margin-top: 40px;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+.home img:last-of-type {
+  width: 300px;
+  height: auto;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
 header {
-  background: hsla(24, 100%, 15%, 0.873); /* Dark orange-brown with transparency */
+  background: hsla(24, 100%, 15%, 0.997);/* Dark orange-brown with transparency */
   /* hsla means hue, saturation, lightness, and alpha (transparency) */
   /* rgba means red, green, blue, and alpha (transparency) */
   /*# colourcode means hexadecimal color code */
   padding: 20px;
-  width:fit-content; /* Shrinks width to fit content */
-  margin: auto;
+  width: fit-content;
+  margin-left: 10px;
   margin-top: 40px;
   color: #fffaf5;
   border-radius: 50px;
-  box-shadow: 5px 2px 3px rgb(94, 92, 92); /* Shadow below the header */
-  font-style: italic; 
-  text-shadow: #333 2px 2px 4px; /* Adds shadow behind text */
-  display: flex; /* Flex for horizontal layout */
-  align-items: center; /* Vertically centers content */
-  justify-content: space-around; /* Even spacing inside */
-  
+  box-shadow: 5px 2px 3px rgb(94, 92, 92);
+  font-style: italic;
+  text-shadow: #333 2px 2px 4px;
+  display: flex;
+  flex-direction: column; /* So everything stacks vertically */
+  align-items: center;
+}
+
+pre{
+  font-size: larger;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 40px;
 }
 
 .img-container {
@@ -85,14 +111,14 @@ h2 {
 }
 
 .menu {
-  margin: 50px auto; /* Centers the menu */
   border-radius: 20px;
   padding: 20px;
-  width: fit-content; /* Vertical space above and below */
+  margin: 20px;
+  width:100%; /* Vertical space above and below */
 }
 
 .items {
-  margin: 20px auto;
+  margin: 20px;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -105,7 +131,7 @@ a{
   font-weight: bold; /* Makes link text bold */
 }
 .item {
-  background:linear-gradient(120deg, #523302 30%, #7a630798); /* Diagonal gradient */
+  background:linear-gradient(120deg, #1d1c1a 70%, #910c82e3); /* Diagonal gradient */
   padding: 15px 20px;
   border-radius: 10px;
   color: white;
@@ -116,7 +142,7 @@ a{
   box-shadow: 2px 2px 6px #393030; /* Overrides previous box-shadow */
 }
 .item:hover {
-  background:linear-gradient(300deg, #523302 30%, #7a630798); /* Changes gradient angle on hover */
+  background:linear-gradient(120deg,#710064e3, #1d1c1a); /* Changes gradient angle on hover */
   transform: scale(1.15); /* Grows slightly on hover */
 }
 button {
@@ -146,9 +172,6 @@ footer {
   font-size: 0.9rem;
   color: cornsilk;
 }
-
-
-
 p {
   
   font-size: 0.9rem;
@@ -180,17 +203,15 @@ p {
   background-color: rgba(255, 255, 255, 0.473);
   padding: 20px;
   border-radius: 15px;
-  margin: 20px auto;
-  max-width: 600px; /* Limits width for better readability */
-  width: 60%;
+  width: 100%;
+  margin: 20px 20px;
 }
 #btn{
   padding: 20px;
   border-radius: 15px;
-  margin : 20px auto;
-  max-width: 600px; /* Limits width for better readability */
-  width: 60%;
+  margin: 20px ;
   flex:0 0 1;
+  align-self: center;
 }
 a{
   text-decoration: none;
@@ -200,4 +221,5 @@ a{
   background-color: rgba(255, 255, 255, 0.448);
    backdrop-filter: blur(20px) saturate(180%); /* Applies background blur effect */
   -webkit-backdrop-filter: blur(20px) saturate(180%);
+  width: 100%;
 }
