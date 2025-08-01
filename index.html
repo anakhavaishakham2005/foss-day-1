@@ -29,31 +29,38 @@
       <!-- The src attribute specifies the path to the image, and alt provides a description for screen readers -->
       <h1>Sweet FOSS  Bakery</h1><!-- h1 is a heading element, used for main titles -->
     </header>
-    <section class="menu" id="menu"><!-- section is a grouping of content, typically with a heading -->
-      <h2>Today's Specials</h2>
-      <div class="items">
-        <!-- div is used for grouping content . difference between div and section is that section is used when you want to create a standalone section of content -->
-         
-        <div class="item">🍰Cake</div>
-        <div class="item">🧁Cupcake</div>
-        <div class="item">🥐Croissant</div>
-        <div class="item">🍪Cookie</div>
-        <div class="item">🍩Donut</div>
-        <div class="item">🥧Pie</div>
-        <div class="item">🍫Chocolate</div>
-        <div class="item">🍮Pudding</div>
-      </div>
-    </section>
+    <section class="menu blurring" id="menu">
+  <h2>Today's Specials</h2>
+  
+  <div class="items">
+    <a href="flexing.html" class="item">🍰 Cake</a>
+    <a href="flexing.html" class="item">🧁 Cupcake</a>
+    <a href="flexing.html" class="item">🥐 Croissant</a>
+  </div>
+
+  <div class="items">
+    <a href="flexing.html" class="item">🍪 Cookie</a>
+    <a href="flexing.html" class="item">🍩 Donut</a>
+    <a href="flexing.html" class="item">🥧 Pie</a>
+  </div>
+
+  <div class="items">
+    <a href="flexing.html" class="item">🍫 Chocolate</a>
+    <a href="flexing.html" class="item">🍮 Pudding</a>
+    <a href="flexing.html" class="item">🍦 Ice Cream</a>
+  </div>
+</section>
+
     <br>
-<div id="btn">
+<div id="btn" class="blurring">
     <button id="btn-surprise" onclick="surpriseMe()" >Click me to see a surprise</button><!-- button is of many types, used to trigger actions -->
     <!-- onclick is an event attribute that executes JavaScript when the element is clicked -->
       <div class="surprise">
-        <h4 id="surprise">Don't you want to try something sweet?</h4>
+        <h4 id="surprise">Need a sweet treat?</h4>
       </div>
   
 </div>
-    <section id="contact">
+    <section id="contact" class="blurring">
       <h2 style="padding: 6px; margin: 8px;">Contact Us</h2>
       <!-- this type of styling where styles are applied directly to the element is called inline CSS -->
 
@@ -68,15 +75,13 @@
     <style> 
     /*this type of adding styles is called internal CSS, it is used to apply styles within a <style> tag in the document */
       .surprise {
-  margin: 20px;
-  padding: 10px;
+        padding: 20px;
   background: #341911; 
   font-size: 15px;
   border-radius: 18px;
   color: #ffe5dd;
-  font-weight: bold;
   width: fit-content;
-  height: 50px;
+  height: auto;
   display: flex;
   margin: auto; /* Centers it horizontally */
 }

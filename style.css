@@ -20,7 +20,7 @@ nav {
 nav ul {
   list-style: none; /* Removes default bullet points */
   display: flex; /* Displays items in a row */
-  justify-content: space-evenly; /* Even spacing across container */
+  justify-content: right; /* Even spacing across container */
   gap: 10px; /* Adds space between items */
 }
 
@@ -66,7 +66,6 @@ header {
 }
 
 .img-container {
-  
   display: flex;
   margin-bottom: 20px;
   border: 2px solid #fce9d6; 
@@ -88,9 +87,6 @@ h2 {
 .menu {
   border-radius: 20px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.448);
-   backdrop-filter: blur(20px) saturate(180%); /* Applies background blur effect */
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   margin: 30px 0; /* Vertical space above and below */
 }
 
@@ -101,7 +97,11 @@ h2 {
   flex-wrap: wrap; /* Wraps items to next line on small screens */
   padding: 15px;
 }
-
+a{
+  text-decoration: none;
+  color: white; /* Ensures link text is white */
+  font-weight: bold; /* Makes link text bold */
+}
 .item {
   background:linear-gradient(120deg, #523302 30%, #7a630798); /* Diagonal gradient */
   padding: 15px 20px;
@@ -113,18 +113,22 @@ h2 {
   border: #fce9d6 2px solid;
   box-shadow: 2px 2px 6px #393030; /* Overrides previous box-shadow */
 }
-
+.item:hover {
+  background:linear-gradient(300deg, #523302 30%, #7a630798); /* Changes gradient angle on hover */
+  transform: scale(1.15); /* Grows slightly on hover */
+}
 button {
-  margin: 20px;
-  padding: 10px 20px;
-  height: 50px;
-  font-size: 1.2rem;
+  padding: 20px;
+  margin: 10px;
+  height: auto;
+  font-size: 20px;
   background:linear-gradient(120deg, #1c0802, #d5390a); /* Gradient from black to red */
   color: white;
   border: none; /* Removes default border */
   border-radius: 8px;
   cursor: pointer; /* Changes cursor to pointer on hover */
-  font-weight: bold;
+  width: fit-content; /* Shrinks button to fit content */
+  /* fit content is done by setting the width to fit the content */
 }
 
 button:hover {
@@ -172,8 +176,6 @@ p {
 }
 #contact{
   background-color: rgba(255, 255, 255, 0.473);
-   backdrop-filter: blur(20px) saturate(180%); /* Applies background blur effect */
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   padding: 20px;
   border-radius: 15px;
   margin: 20px auto;
@@ -181,15 +183,26 @@ p {
   width: 60%;
 }
 #btn{
-  background-color: rgba(255, 255, 255, 0.553);
-   backdrop-filter: blur(20px) saturate(180%); /* Applies background blur effect */
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   padding: 20px;
   border-radius: 15px;
   margin : 20px auto;
   max-width: 600px; /* Limits width for better readability */
   width: 60%;
+  flex:0 0 1;
 }
 a{
   text-decoration: none;
+}
+
+.blurring{
+  background-color: rgba(255, 255, 255, 0.448);
+   backdrop-filter: blur(20px) saturate(180%); /* Applies background blur effect */
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+@media (width:200px){
+  .img-container {
+    width: 50px; /* Smaller image container on small screens */
+    height: 50px;
+  }
 }
