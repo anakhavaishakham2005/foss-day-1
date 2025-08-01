@@ -199,10 +199,3 @@ a{
    backdrop-filter: blur(20px) saturate(180%); /* Applies background blur effect */
   -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
-
-@media (width:200px){
-  .img-container {
-    width: 50px; /* Smaller image container on small screens */
-    height: 50px;
-  }
-}
