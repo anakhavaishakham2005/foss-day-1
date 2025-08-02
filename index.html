@@ -71,8 +71,8 @@
 <div id="btn" class="blurring">
     <button id="btn-surprise" onclick="surpriseMe()" >Click me to see a surprise</button><!-- button is of many types, used to trigger actions -->
     <!-- onclick is an event attribute that executes JavaScript when the element is clicked -->
-      <div class="surprise">
-        <h4 id="surprise">Need a sweet treat?</h4>
+      <div class="surprise-cls">
+        <span id="surprise">Need a sweet treat?</span>
       </div>
   
 </div>
@@ -90,14 +90,14 @@
     </footer>
     <style> 
     /*this type of adding styles is called internal CSS, it is used to apply styles within a <style> tag in the document */
-      .surprise {
+      .surprise-cls{
         padding: 20px;
   background: #341911; 
   font-size: 15px;
   border-radius: 18px;
   color: #ffe5dd;
   width: fit-content;
-  height: auto;
+  height: fit-content;
   display: flex;
   margin: auto; /* Centers it horizontally */
 }
