@@ -10,11 +10,11 @@ function surpriseMe(){
 
 //OR
 
-// // Alternative way to achieve the same fuction using => and onclick event
-// btnSurprise = document.getElementById("btn-surprise");
-// // This line gets the button with the id "btn-surprise" and assigns it to the
-// headings=document.getElementById("surprise");
-// // This line gets the element with the id "surprise" and assigns it to the variable headings
-// btnSurprise.onclick = () => {
-//   headings.innerHTML = "You just won a discount of 50% on your first purchase!";
-// }
+// Alternative way to achieve the same fuction using => and onclick event
+btnSurprise = document.getElementById("btn-surprise");
+// This line gets the button with the id "btn-surprise" and assigns it to the
+headings=document.getElementById("surprise");
+// This line gets the element with the id "surprise" and assigns it to the variable headings
+btnSurprise.onclick = () => {
+  headings.innerHTML = "You just won a discount of 50% on your first purchase!";
+}
